@@ -14,7 +14,7 @@ export function HeroSectionFirst() {
               <h1 className="text-[76.5px] text-gray-900 font-semibold leading-[0.95] tracking-[-0.04em] m-0 p-0 balance-text">
                 The happier workspace
               </h1>
-              <p className="text-gray-700">
+              <p className="text-gray-700 ">
                 Write Plan Collaborate. With a little help from AI.
               </p>
 
