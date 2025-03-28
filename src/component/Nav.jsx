@@ -18,7 +18,7 @@ export default function Nav() {
   };
 
 
-  // hide body overflow when mobile menu is open
+  // hide body overflow when mobile menu is open.
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -28,7 +28,7 @@ export default function Nav() {
   }, [isOpen]);
 
   return (
-    <header className="bg-white top-0 sticky z-50">
+    <header className="bg-white top-0 sticky z-50 ">
       <div className="flex items-center justify-between p-4 h-[56px]">
         {/* Notion Logo */}
         <div className="flex items-center space-x-2">
