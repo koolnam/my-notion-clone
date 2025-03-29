@@ -1,7 +1,7 @@
 import "./index.css";
 import Nav from "./component/Nav";
 import { HeroSectionFirst } from "./component/HeroSectionFirst";
-import ImageCarousel from "./component/Carousel";
+import ImageCarouselWithThumbnails from "./component/Carousel";
 import { NewHeroSection } from "./component/newHeroSection";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       {/* <HeroSectionFirst /> */}
       {/* <ImageCarousel /> */}
       <NewHeroSection />
+      <ImageCarouselWithThumbnails />
     </>
   );
 }
