@@ -221,7 +221,7 @@ export default function ImageCarouselWithThumbnails() {
   return (
     <div className="flex flex-col max-w-[1198px] mx-auto">
 
-      <div className="relative h-[700px] w-full overflow-hidden  rounded-lg ">
+      <div className="relative h-[850px] w-[1280px] overflow-hidden shadow-md rounded-lg ">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentImageIndex}
@@ -234,7 +234,7 @@ export default function ImageCarouselWithThumbnails() {
             <img
               src={images[currentImageIndex].src }
               alt={images[currentImageIndex].alt}
-              className="w-full h-full object-cover"
+              className="w-[1280px] h-[800px] object-cover"
             />
           </motion.div>
         </AnimatePresence>
