@@ -22,7 +22,7 @@ const ProductCard = ({ title, tryHref, downloadHref, imageSrc, imageAlt }) => {
 
 export default function GetStarted() {
   return (
-    <section className="max-w-[1252px] mx-auto py-[40px] px-[30px]">
+    <section className="max-w-[1252px] mx-auto py-[40px] px-[35px]">
       <h2 className="text-5xl font-bold text-left mb-12">Get started.</h2>
       <div className="grid md:grid-cols-2 gap-6">
         <ProductCard
