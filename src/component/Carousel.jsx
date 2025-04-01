@@ -221,28 +221,26 @@ export default function ImageCarouselWithThumbnails() {
   return (
     <div className="flex flex-col max-w-[1198px] mx-auto">
 
-      <div className="relative h-[850px] w-[1280px] overflow-hidden shadow-md rounded-lg ">
+      <div className="relative h-auto w-full overflow-hidden shadow-md rounded-lg ">
         <AnimatePresence mode="wait">
-          <motion.div
+         
+            <motion.img
             key={currentImageIndex}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <img
               src={images[currentImageIndex].src }
               alt={images[currentImageIndex].alt}
-              className="w-[1280px] h-[800px] object-cover"
+              className=" object-cover"
             />
-          </motion.div>
+         
         </AnimatePresence>
       </div>
 
       <div className="mt-4 flex justify-center">
         <div className="overflow-x-auto pb-2 max-w-full">
-          <div className="flex gap-2 justify-center min-w-max">
+          <div className="flex gap-2 flex-wrap ">
             {images.map((image, index) => (
               <button
                 key={image.id}
