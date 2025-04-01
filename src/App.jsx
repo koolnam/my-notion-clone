@@ -6,7 +6,7 @@ import { NewHeroSection } from "./component/NewHeroSection";
 import { SecondHeroSection } from "./component/HeroSectionSec";
   import FeatureGrid from "./component/FeatureGrid";
 import StartTemplate from "./component/StartTemplate";
-import { HeroSectionThird } from "./component/heroSectionThird";
+import { HeroSectionThird } from "./component/HeroSectionThird";
 import { HeroSectionFourth } from "./component/HeroSectionFourth";
 import { HeroSectionFifth } from "./component/HeroSectionFifth";
 import GetStarted from "./component/GetStarted"
