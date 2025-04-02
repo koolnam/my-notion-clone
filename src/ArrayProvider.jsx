@@ -156,7 +156,7 @@ export const navBarListItems = [
       },
       {
         id: 4,
-        SubParagraph: "Notion is always at home right in ...your browser",
+        subText: "Notion is always at home right in ...your browser",
       },
     ],
   },

@@ -101,7 +101,7 @@ export function HeroSectionThird() {
             {/* Video section */}
             <div className="w-full">
               <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
-                <video src={heroSectionVideo}></video>
+                <video src={heroSectionVideo} autoPlay muted playsInline></video>
                 {/* <p className="text-muted-foreground">Video content will be displayed here</p> */}
               </div>
             </div>

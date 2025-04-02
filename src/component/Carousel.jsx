@@ -248,7 +248,7 @@ export default function ImageCarouselWithThumbnails() {
                 disabled={isAnimating}
                 className={classNames(
                   "flex items-center gap-3 px-3 py-1 rounded-md transition-all duration-300",
-                  index === currentImageIndex ? "bg-primary text-white" : "bg-gray-100 hover:bg-gray-200 text-gray-800",
+                  index === currentImageIndex ? "bg-[#0000000d] text-black" : " hover:bg-[#0000001a] text-gray-800",
                 )}
                 aria-label={`View ${image.alt}`}
               >

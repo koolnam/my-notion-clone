@@ -6,15 +6,15 @@ const ProductCard = ({ title, tryHref, downloadHref, imageSrc, imageAlt }) => {
     <div className="bg-gray-50 rounded-lg p-6 flex flex-col">
       <h1 className="text-2xl font-bold mb-4">{title}</h1>
       <div className="flex gap-3 mb-6">
-        <Button asChild className="bg-blue-500 hover:bg-blue-600 text-white">
+        <Button className="bg-blue-500 hover:bg-blue-600 text-white">
           <a href={tryHref}>Try it free</a>
         </Button>
-        <Button asChild variant="outline" className="bg-white">
+        <Button  variant="outline" className="bg-white">
           <a href={downloadHref}>Download now</a>
         </Button>
       </div>
       <div className="relative h-64 w-full mt-auto">
-        <img src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-contain" />
+        <img src={imageSrc || "/placeholder.svg"} alt={imageAlt} className="object-contain" />
       </div>
     </div>
   );

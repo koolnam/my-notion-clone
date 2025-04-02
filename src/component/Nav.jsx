@@ -10,6 +10,7 @@ export default function Nav() {
   const [selectedItemsId, setSelectedItemsId] = useState([
     navBarListItems[0].id,
   ]);
+  const [scrolled ,setscrolled] = useState(false);
 
   const toggle = (id) => {
     setSelectedItemsId((prev) =>
@@ -27,15 +28,30 @@ export default function Nav() {
     }
   }, [isOpen]);
 
+  useEffect(()=>{
+  const handleScroll =()=>{
+    setscrolled(window.scrollY > 0)
+  }
+   window.addEventListener("scroll",handleScroll);
+   return () => window.removeEventListener("scroll",handleScroll);
+  },[])
+
   return (
-    <header className="bg-white top-0 sticky z-50 ">
+    <header className={`bg-white top-0 sticky z-50  ${scrolled ? "border-b border-gray-300 shadow-md" :""} `}>
+     
       <div className="flex items-center justify-between p-4 h-[56px]">
+      
         {/* Notion Logo */}
         <div className="flex items-center space-x-2">
           <span>
             <Svg />
           </span>
         </div>
+
+        {/* scrolled button visible */}
+        {scrolled && <div className="">
+         <button>Get Notiontrgtg Free</button>
+        </div>}
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center justify-between w-full ml-8">
@@ -117,6 +133,7 @@ export default function Nav() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden space-y-2 text-left relative overflow-auto h-[calc(100vh-56px)] flex flex-col justify-between">
+          
           <div>{navBarListItems.map((item, index) => (
             <div key={index}>
               <div className="block">

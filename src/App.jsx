@@ -10,6 +10,7 @@ import { HeroSectionThird } from "./component/HeroSectionThird";
 import { HeroSectionFourth } from "./component/HeroSectionFourth";
 import { HeroSectionFifth } from "./component/HeroSectionFifth";
 import GetStarted from "./component/GetStarted"
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <HeroSectionFifth />
         <FeatureGrid />
          <GetStarted/>
+         <Footer/>
         
       </div>
     
