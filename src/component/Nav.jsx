@@ -49,9 +49,9 @@ export default function Nav() {
         </div>
 
         {/* scrolled button visible */}
-        {scrolled && <div className="">
+        {/* {scrolled && <div className="">
          <button>Get Notiontrgtg Free</button>
-        </div>}
+        </div>} */}
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center justify-between w-full ml-8">
@@ -91,23 +91,24 @@ export default function Nav() {
                 </button>
               </li>
             </ul>
-            <div
+            {/* <div
               style={{
                 width: "1px",
                 background: "var(--color-border)",
                 height: "20px",
                 margin: "0 10px",
               }}
-            ></div>
+            ></div> */}
+            <div className="w-[1px] bg-[#0000001a] h-5 m-x-[10px]"></div>
             <ul className="flex items-center space-x-4">
               <li>
                 <button className="text-gray-700 hover:text-black-800 hover:bg-[rgba(0,0,0,0.05)] rounded px-2 py-1 transition">
-                  Login
+                  Log in
                 </button>
               </li>
               <li>
-                <button className="px-4 py-1 text-white bg-black rounded-lg hover:bg-gray-800">
-                  Sign up
+                <button className="px-3 py-1 text-white bg-black text-[14px] shadow-[0px_0.33px_0.73px_0px_rgba(0,0,0,0.12)] rounded hover:bg-gray-800">
+                 Get Notion free
                 </button>
               </li>
             </ul>

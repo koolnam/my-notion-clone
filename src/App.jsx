@@ -18,11 +18,11 @@ function App() {
       <Nav />
       <HeroSectionFirst />
       {/* <ImageCarousel /> */}
-      <div className="flex flex-col gap-[150px]">
-        {/* <NewHeroSection /> */}
+      {/* <div className="flex flex-col gap-[150px]">
+      
         <ImageCarouselWithThumbnails />
         <SecondHeroSection />  
-        {/* <StartTemplate /> */}
+      
          <HeroSectionThird />
         <HeroSectionFourth />
         <HeroSectionFifth />
@@ -30,10 +30,11 @@ function App() {
          <GetStarted/>
          <Footer/>
         
-      </div>
+      </div> */}
     
     </>
   );
 }
 
 export default App;
+  {/* <NewHeroSection /> */}  {/* <StartTemplate /> */}

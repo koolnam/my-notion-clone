@@ -7,7 +7,9 @@ export default {
       screens: {
         xs: "480px", // Extra small screens
         sm: "640px", // Default Tailwind sm
+        ms: "702px",
         md: "768px", // Default Tailwind md
+        mdd: "930px",
         lg: "1080px", // Default Tailwind lg
         xl: "1280px", // Default Tailwind xl
         "2xl": "1536px", // Default Tailwind 2xl
@@ -17,6 +19,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: "Inter", 
       },
       colors: {
         background: "hsl(var(--background))",
