@@ -5,19 +5,19 @@ import { useEffect, useState } from "react"
 export function HeroSectionFifth() {
   const arrayofhero = [
     {
-      title: "Building blocks",
-      vidSource: "",
-      subtitle: "100+ content types to communicate any idea.",
+      title: "Instant answers",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/ai/ai-answers.mp4",
+      subtitle: "Ask any question about a team’s docs and projects.",
     },
     {
-      title: "Collaborative tools",
-      vidSource: "",
-      subtitle: "Built for teams to share, suggest, and comment.",
+      title: "Personalized editor",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/ai/ai-editor.mp4",
+      subtitle: "Generate content that’s always relevant.",
     },
     {
-      title: "AI-assisted",
-      vidSource: "",
-      subtitle: "Edit, draft, translate. Ask and AI will help.",
+      title: "AI connectors beta",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/ai/ai-connectors.mp4",
+      subtitle: "Access info from Slack, Google Drive and more, right inside Notion",
     },
   ]
 
@@ -66,29 +66,24 @@ export function HeroSectionFifth() {
             <div className="flex flex-row gap-12">
               {/* Left side content */}
               <div className="w-1/2 space-y-6">
-                <h1 className="text-5xl font-bold tracking-tight">Build perfect docs, together.</h1>
+                <h1 className="text-5xl font-bold tracking-tight">Get a brain boost.</h1>
                 <p className="text-lg text-muted-foreground">
-                  Capture your ideas, get feedback from teammates, and ask AI to add the finishing touches.
-                </p>
+                Built right into your workspace, Notion AI is ready to brainstorm, summarize, help you write, and find what you’re looking for.</p>
                 <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-                  Explore docs & notes→
+                Try Notion AI→
                 </a>
               </div>
 
               {/* Right side content */}
               <div className="w-1/2">
-                <ul className="flex flex-row gap-6">
+              <ul className="flex flex-row gap-7">
                   {arrayofhero.map((item, index) => (
                     <li key={index} className="p-4 bg-background flex-1">
                       {/* Video at the top */}
-                      <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 overflow-hidden">
-                        {item.vidSource ? (
-                          <video src={item.vidSource} className="w-full h-full object-cover" autoPlay muted loop />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center">
-                            <p className="text-xs text-muted-foreground">Video preview</p>
-                          </div>
-                        )}
+                      <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 ">
+
+                          <video src={item.vidSource} className="w-full h-[80px] object-cover playsInline" autoPlay muted />
+
                       </div>
                       <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
                       <p className="text-sm text-muted-foreground">{item.subtitle}</p>
@@ -107,23 +102,7 @@ export function HeroSectionFifth() {
             </div>
 
             {/* Features section */}
-            <div className="w-full">
-              <div className="flex flex-wrap items-center gap-1 mb-8">
-                <h4 className="text-lg font-semibold">Key Features:</h4>
-                <ul className="flex items-center gap-4 p-0 m-0 list-none">
-                  {featuresArray.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-1">
-                      <img
-                        src={feature.imgSrc || "/placeholder.svg"}
-                        alt={`Feature ${index + 1}`}
-                        className="w-5 h-5 object-contain"
-                      />
-                      <span>{feature.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            
           </>
         ) : (
           // Mobile layout (≤ 836px)
@@ -147,23 +126,7 @@ export function HeroSectionFifth() {
             </div>
 
             {/* Features section */}
-            <div className="w-full">
-              <div className="flex flex-wrap items-center gap-1 mb-8">
-                <h4 className="text-lg font-semibold">Key Features:</h4>
-                <ul className="flex items-center gap-4 p-0 m-0 list-none">
-                  {featuresArray.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-1">
-                      <img
-                        src={feature.imgSrc || "/placeholder.svg"}
-                        alt={`Feature ${index + 1}`}
-                        className="w-5 h-5 object-contain"
-                      />
-                      <span>{feature.text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          
 
             {/* Right side content - at the very bottom on mobile */}
             <div className="w-full">

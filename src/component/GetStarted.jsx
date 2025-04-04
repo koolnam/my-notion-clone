@@ -4,7 +4,7 @@ import Button from "./Buttons";
 const ProductCard = ({ title, tryHref, downloadHref, imageSrc, imageAlt }) => {
   return (
     <div className="bg-gray-50 rounded-lg p-6 flex flex-col">
-      <h1 className="text-2xl font-bold mb-4">{title}</h1>
+      <h1 className="text-[42px] font-semibold mb-4">{title}</h1>
       <div className="flex gap-3 mb-6">
         <Button className="bg-blue-500 hover:bg-blue-600 text-white">
           <a href={tryHref}>Try it free</a>
@@ -29,14 +29,14 @@ export default function GetStarted() {
           title="Notion"
           tryHref="/try-notion"
           downloadHref="/download-notion"
-          imageSrc="/placeholder.svg?height=400&width=400"
+          imageSrc="https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fproduct%2Fsuper-duper%2Fdownload%2Fnotion-app.png&w=3840&q=75"
           imageAlt="Notion app interface"
         />
         <ProductCard
           title="Notion Calendar"
           tryHref="/try-calendar"
           downloadHref="/download-calendar"
-          imageSrc="/placeholder.svg?height=400&width=400"
+          imageSrc="https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fproduct%2Fsuper-duper%2Fdownload%2Fnotion-calendar.png&w=3840&q=75"
           imageAlt="Notion Calendar interface"
         />
       </div>

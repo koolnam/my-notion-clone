@@ -6,17 +6,17 @@ export function SecondHeroSection() {
   const arrayofhero = [
     {
       title: "Building blocks",
-      vidSource: "",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/write/write-building-blocks.mp4",
       subtitle: "100+ content types to communicate any idea.",
     },
     {
       title: "Collaborative tools",
-      vidSource: "",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/write/write-collaboration.mp4",
       subtitle: "Built for teams to share, suggest, and comment.",
     },
     {
       title: "AI-assisted",
-      vidSource: "",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/write/write-ai.mp4",
       subtitle: "Edit, draft, translate. Ask and AI will help.",
     },
   ]
@@ -77,18 +77,14 @@ export function SecondHeroSection() {
 
               {/* Right side content */}
               <div className="w-1/2">
-                <ul className="flex flex-row gap-6">
+              <ul className="flex flex-row gap-7">
                   {arrayofhero.map((item, index) => (
                     <li key={index} className="p-4 bg-background flex-1">
                       {/* Video at the top */}
-                      <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 overflow-hidden">
-                        {item.vidSource ? (
-                          <video src={item.vidSource} className="w-full h-full object-cover" autoPlay muted loop />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center">
-                            <p className="text-xs text-muted-foreground">Video preview</p>
-                          </div>
-                        )}
+                      <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 ">
+
+                          <video src={item.vidSource} className="w-full h-[80px] object-cover playsInline" autoPlay muted />
+
                       </div>
                       <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
                       <p className="text-sm text-muted-foreground">{item.subtitle}</p>

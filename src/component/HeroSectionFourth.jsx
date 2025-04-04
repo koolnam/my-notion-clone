@@ -5,19 +5,19 @@ import { useEffect, useState } from "react"
 export function HeroSectionFourth() {
   const arrayofhero = [
     {
-      title: "Building blocks",
-      vidSource: "",
-      subtitle: "100+ content types to communicate any idea.",
+      title: "Teamspaces",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/organize/organize-teamspaces.mp4",
+      subtitle: "Dedicated spaces for every team & project",
     },
     {
-      title: "Collaborative tools",
-      vidSource: "",
-      subtitle: "Built for teams to share, suggest, and comment.",
+      title: "Integrations",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/organize/organize-integrations.mp4",
+      subtitle: "Connected to all your other tools.",
     },
     {
-      title: "AI-assisted",
-      vidSource: "",
-      subtitle: "Edit, draft, translate. Ask and AI will help.",
+      title:"Just ask AI",
+      vidSource: "https://www.notion.com/front-static/pages/product/super-duper/organize/organize-ai.mp4",
+      subtitle: "Trusted answers across your apps.",
     },
   ]
 
@@ -66,29 +66,25 @@ export function HeroSectionFourth() {
             <div className="flex flex-row gap-12">
               {/* Left side content */}
               <div className="w-1/2 space-y-6">
-                <h1 className="text-5xl font-bold tracking-tight">Build perfect docs, together.</h1>
+                <h1 className="text-5xl font-bold tracking-tight">Find everything. Instantly.</h1>
                 <p className="text-lg text-muted-foreground">
-                  Capture your ideas, get feedback from teammates, and ask AI to add the finishing touches.
+                No more endless searching. Our built-in AI finds what you're looking for, whether its stored in Notion or one of your other apps.
                 </p>
                 <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-                  Explore docs & notes→
+                Explore knowledge management→
                 </a>
               </div>
 
               {/* Right side content */}
               <div className="w-1/2">
-                <ul className="flex flex-row gap-6">
+              <ul className="flex flex-row gap-7">
                   {arrayofhero.map((item, index) => (
                     <li key={index} className="p-4 bg-background flex-1">
                       {/* Video at the top */}
-                      <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 overflow-hidden">
-                        {item.vidSource ? (
-                          <video src={item.vidSource} className="w-full h-full object-cover" autoPlay muted loop />
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center">
-                            <p className="text-xs text-muted-foreground">Video preview</p>
-                          </div>
-                        )}
+                      <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 ">
+
+                          <video src={item.vidSource} className="w-full h-[80px] object-cover playsInline" autoPlay muted />
+
                       </div>
                       <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
                       <p className="text-sm text-muted-foreground">{item.subtitle}</p>

@@ -18,7 +18,7 @@ function App() {
       <Nav />
       <HeroSectionFirst />
       {/* <ImageCarousel /> */}
-      {/* <div className="flex flex-col gap-[150px]">
+      <div className="flex flex-col gap-[150px]">
       
         <ImageCarouselWithThumbnails />
         <SecondHeroSection />  
@@ -30,7 +30,7 @@ function App() {
          <GetStarted/>
          <Footer/>
         
-      </div> */}
+      </div>
     
     </>
   );
