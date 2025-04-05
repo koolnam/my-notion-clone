@@ -1,4 +1,5 @@
 "use client"
+import { ChevronRight } from "lucide-react"
 import heroSectionVideo from "@/assets/plan-screen-desktop.mp4"
 
 export function HeroSectionThird() {
@@ -20,7 +21,6 @@ export function HeroSectionThird() {
     },
   ]
 
-  // New array for the bottom section items
   const featuresArray = [
     {
       imgSrc: "/placeholder.svg?height=20&width=20",
@@ -38,91 +38,60 @@ export function HeroSectionThird() {
 
   return (
     <div className="w-full max-w-[1252px] mx-auto px-4 md:px-6">
-      <div className="flex flex-col gap-8">
-        {/* Grid layout that changes based on screen size */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-          {/* Left side content */}
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-              {/* Different text for mobile/desktop */}
-              <span className="md:hidden">Build perfect docs, together.</span>
-              <span className="hidden md:inline">Your workflow. Your way.</span>
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              {/* Different text for mobile/desktop */}
-              <span className="md:hidden">
-                Capture your ideas, get feedback from teammates, and ask AI to add the finishing touches.
-              </span>
-              <span className="hidden md:inline">
-                All your projects, goals, calendars, roadmaps, and more—in one tool—personalized to how you and your
-                team work.
-              </span>
-            </p>
-            <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-              {/* Different text for mobile/desktop */}
-              <span className="md:hidden">Explore docs & notes→</span>
-              <span className="hidden md:inline">Explore projects</span>
-            </a>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      {/* Left Content */}
+      <div className="space-y-6 order-1">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Your workflow. Your way.</h1>
+        <p className="text-lg text-muted-foreground">
+        All your projects, goals, calendars, roadmaps, and more—in one tool—personalized to how you and your team work.
+        </p>
+        <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
+          Explore Projects{<ChevronRight/>}
+        </a>
+      </div>
 
-          {/* Right side content - cards */}
-          <div className="hidden md:block">
-            <ul className="grid grid-cols-3 gap-7">
-              {arrayofhero.map((item, index) => (
-                <li key={index} className="p-4 bg-background flex-1">
-                  <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 overflow-hidden">
-                    <video src={item.vidSource} className="w-full h-[80px] object-cover" autoPlay muted playsInline />
-                  </div>
-                  <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
-                  <p className="text-sm text-muted-foreground">{item.subtitle}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* Right Content */}
+      <div className="order-3 md:order-2">
+        <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {arrayofhero.map((item, index) => (
+            <li key={index} className="p-4 bg-background">
+              <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4">
+                <video src={item.vidSource} className="w-full h-[80px] object-cover" autoPlay muted playsInline />
+              </div>
+              <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
+              <p className="text-sm text-muted-foreground">{item.subtitle}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Video Section */}
+      <div className="md:col-span-2 order-2 md:order-3">
+        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
+          <video src={heroSectionVideo} preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
         </div>
-
-        {/* Video section */}
-        <div className="w-full">
-          <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8 overflow-hidden">
-            <video src={heroSectionVideo} className="w-full h-full object-cover" autoPlay muted playsInline />
-          </div>
-        </div>
-
-        {/* Features section */}
-        <div className="w-full">
-          <div className="flex flex-wrap items-center gap-1 mb-8">
-            <h4 className="text-lg font-semibold">Key Features:</h4>
-            <ul className="flex items-center gap-4 p-0 m-0 list-none">
-              {featuresArray.map((feature, index) => (
-                <li key={index} className="flex items-center gap-1">
-                  <img
-                    src={feature.imgSrc || "/placeholder.svg"}
-                    alt={`Feature ${index + 1}`}
-                    className="w-5 h-5 object-contain"
-                  />
-                  <span>{feature.text}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Mobile-only cards section at the bottom */}
-        <div className="md:hidden w-full">
-          <ul className="grid grid-cols-1 gap-4">
-            {arrayofhero.map((item, index) => (
-              <li key={index} className="p-4 bg-background flex-1">
-                <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4 overflow-hidden">
-                  <video src={item.vidSource} className="w-full h-full object-cover" autoPlay muted playsInline />
-                </div>
-                <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
-                <p className="text-sm text-muted-foreground">{item.subtitle}</p>
+ {/* Features Section */}
+ <div className="md:col-span-2 order-4">
+        <div className="flex flex-wrap items-center gap-1 mb-8">
+          <h4 className="text-lg font-semibold">Key Features:</h4>
+          <ul className="flex items-center gap-4 p-0 m-0 list-none">
+            {featuresArray.map((feature, index) => (
+              <li key={index} className="flex items-center gap-1">
+                <img
+                  src={feature.imgSrc || "/placeholder.svg"}
+                  alt={`Feature ${index + 1}`}
+                  className="w-5 h-5 object-contain"
+                />
+                <span>{feature.text}</span>
               </li>
             ))}
           </ul>
         </div>
       </div>
+      </div>
+
+     
     </div>
+  </div>
   )
 }
-
