@@ -24,16 +24,16 @@ export function HeroSectionFourth() {
   // New array for the bottom section items
   const featuresArray = [
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature one",
+      imgSrc: "https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fproduct%2Fsuper-duper%2Ftools%2Fconfluence.png&w=48&q=75",
+      text: "Confluence",
     },
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature two",
+      imgSrc: "https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fproduct%2Fsuper-duper%2Ftools%2Fsharepoint.png&w=48&q=75",
+      text: "SharePoint",
     },
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature three",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/google-drive.svg",
+      text: "Google Drive",
     },
   ]
 
@@ -77,7 +77,7 @@ export function HeroSectionFourth() {
       {/* Features Section */}
       <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Key Features:</h4>
+          <h4 className="text-lg font-semibold">Replaces</h4>
           <ul className="flex items-center gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">

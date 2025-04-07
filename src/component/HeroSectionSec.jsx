@@ -22,16 +22,16 @@ export function SecondHeroSection() {
 
   const featuresArray = [
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature one",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/evernote.svg",
+      text: "Evernote",
     },
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature two",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/gdocs.svg",
+      text: "Google Docs",
     },
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature three",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/coda.svg",
+      text: "Coda",
     },
   ]
 
@@ -72,7 +72,7 @@ export function SecondHeroSection() {
  {/* Features Section */}
  <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Key Features:</h4>
+          <h4 className="text-lg font-semibold">Replaces</h4>
           <ul className="flex items-center gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">

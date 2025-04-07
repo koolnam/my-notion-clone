@@ -23,16 +23,16 @@ export function HeroSectionThird() {
 
   const featuresArray = [
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature one",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/trello.svg",
+      text: "Trello",
     },
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature two",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/asana.svg",
+      text: "Asana",
     },
     {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature three",
+      imgSrc: "https://www.notion.com/front-static/pages/product/super-duper/tools/monday.svg",
+      text: "Monday",
     },
   ]
 
@@ -73,7 +73,7 @@ export function HeroSectionThird() {
  {/* Features Section */}
  <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Key Features:</h4>
+          <h4 className="text-lg font-semibold">Replaces</h4>
           <ul className="flex items-center gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">
@@ -89,8 +89,6 @@ export function HeroSectionThird() {
         </div>
       </div>
       </div>
-
-     
     </div>
   </div>
   )

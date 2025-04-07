@@ -51,7 +51,7 @@ export default function StartTemplate() {
                     <h2>{item.title}</h2>
                 </div>
             ))}
-            <img src="" alt="asdasd" />
+            <img src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fillustrated-icons%2FdocsStacked.png&w=256&q=75" alt="asdasd" />
         </div>
       </div>{" "}
     </>

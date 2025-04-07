@@ -219,17 +219,18 @@ export default function ImageCarouselWithThumbnails() {
   }, [currentImageIndex])
 
   return (
-    <div className="flex flex-col max-w-[1198px] mx-auto">
+    <div className="flex flex-col max-w-[1198px] mx-auto px-5">
 
       <div className="relative h-auto w-full overflow-hidden shadow-md rounded-lg ">
         <AnimatePresence mode="wait">
-         
             <motion.img
             key={currentImageIndex}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            height="1024"
+            width="1024"
+            transition={{ duration: 0.4, ease: "easeInOut" }}
               src={images[currentImageIndex].src }
               alt={images[currentImageIndex].alt}
               className=" object-cover"

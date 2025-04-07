@@ -4,7 +4,7 @@ const layoutItems = [
   {
     title: "Docs →",
     description: "Build any page, communicate any idea.",
-    imgSrc: "https://www.notion.com/_next/image?url=%2Ffront-st…c%2Fillustrated-icons%2FdocsStacked.png&w=96&q=75"
+    imgSrc: "https://www.notion.com/_next/image?url=%2Ffront-static%2Fillustrated-icons%2FdocsStacked.png&w=256&q=100"
   },
   {
     title: "Wiki →",
@@ -57,7 +57,7 @@ const FeatureGrid = () => {
               <img
                 src={item.imgSrc}
                 alt={item.title}
-                className="w-10 h-10 object-contain"
+                className="size-16 object-contain"
               />
               <h2 className="text-lg font-bold">{item.title}</h2>
               <p className="text-gray-500">{item.description}</p>
