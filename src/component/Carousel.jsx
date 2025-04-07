@@ -229,7 +229,7 @@ export default function ImageCarouselWithThumbnails() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }} 
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            >
+            className="h-[47vw] w-full min-h-[200px] max-h-fit">
             <img
            
               src={images[currentImageIndex].src }
