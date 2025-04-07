@@ -233,7 +233,7 @@ export default function ImageCarouselWithThumbnails() {
             transition={{ duration: 0.4, ease: "easeInOut" }}
               src={images[currentImageIndex].src }
               alt={images[currentImageIndex].alt}
-              className=" object-cover"
+              className=" object-contain min-h-[200px] h-[60vw] max-h-fit"
             />
          
         </AnimatePresence>
