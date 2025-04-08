@@ -1,5 +1,5 @@
 "use client"
-import { ChevronRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import heroSectionVideo from "@/assets/plan-screen-desktop.mp4"
 
 export function HeroSectionThird() {
@@ -41,12 +41,12 @@ export function HeroSectionThird() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Content */}
       <div className="space-y-6 order-1">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Your workflow. Your way.</h1>
+        <h1 className="text-4xl md:text-6xl font-bold md:leading-[64px] tracking-[-1.875px]">Your workflow. Your way.</h1>
         <p className="text-lg text-muted-foreground">
         All your projects, goals, calendars, roadmaps, and more—in one tool—personalized to how you and your team work.
         </p>
-        <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-          Explore Projects{<ChevronRight/>}
+        <a href="" className="inline-flex items-center text-blue-500 font-medium hover:underline decoration-black">
+          Explore Projects <span>{<ArrowRight size={18}/>}</span>
         </a>
       </div>
 
@@ -73,7 +73,7 @@ export function HeroSectionThird() {
  {/* Features Section */}
  <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Replaces</h4>
+        <h4 className="text-md font-semibold">Replaces</h4>
           <ul className="flex items-center gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">

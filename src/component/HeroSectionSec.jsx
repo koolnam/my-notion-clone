@@ -1,5 +1,6 @@
 "use client"
 import heroSectionVideo from "@/assets/write-screen-desktop.mp4"
+import { ArrowRight } from "lucide-react"
 
 export function SecondHeroSection() {
   const arrayofhero = [
@@ -40,12 +41,12 @@ export function SecondHeroSection() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Content */}
       <div className="space-y-6 order-1">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Build perfect docs, together.</h1>
+        <h1 className="text-4xl md:text-6xl font-bold md:leading-[64px] tracking-[-1.875px] ">Build perfect docs, together.</h1>
         <p className="text-lg text-muted-foreground">
           Capture your ideas, get feedback from teammates, and ask AI to add the finishing touches.
         </p>
-        <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-          Explore docs & notes→
+        <a href="" className="inline-flex items-center text-blue-500 font-medium hover:underline decoration-black">
+          Explore docs & notes <span><ArrowRight size={18}/></span>
         </a>
       </div>
 
@@ -72,7 +73,7 @@ export function SecondHeroSection() {
  {/* Features Section */}
  <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Replaces</h4>
+        <h4 className="text-md font-semibold">Replaces</h4>
           <ul className="flex items-center gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">

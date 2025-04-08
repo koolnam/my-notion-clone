@@ -1,5 +1,4 @@
 import toyotaImage from "../assets/svg/toyota-color.svg";
-import vercelImage from "../assets//svg/vercel-image.svg";
 import figmaImage from "../assets/svg/figma-color.svg";
 import rampImage from "../assets/svg/ramp-image.svg";
 import homePageVid from "../assets/homepage.mp4";
@@ -48,7 +47,6 @@ export function HeroSectionFirst() {
           className="h-auto max-w-[340px] md:max-w-[400px] lg:max-w-[450px]  xl:max-w-[600px]"
           autoPlay
           muted
-          loop
         />
       </div>
     </div>

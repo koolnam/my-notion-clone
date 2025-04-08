@@ -1,6 +1,6 @@
 "use client"
 import heroSectionVideo from "@/assets/organize-screen-desktop.mp4" 
-import { useEffect, useState } from "react"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSectionFourth() {
   const arrayofhero = [
@@ -43,12 +43,12 @@ export function HeroSectionFourth() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Content */}
       <div className="space-y-6 order-1">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Find everything. Instantly.</h1>
+        <h1 className="text-4xl md:text-6xl font-bold md:leading-[64px] tracking-[-1.875px]">Find everything. Instantly.</h1>
         <p className="text-lg text-muted-foreground">
         No more endless searching. Our built-in AI finds what you're looking for, whether its stored in Notion or one of your other apps. 
         </p>
-        <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-        Explore knowledge management→
+        <a href="" className="inline-flex items-center text-blue-500 font-medium hover:underline decoration-black">
+        Explore knowledge management <span>{<ArrowRight size={19}/>}</span>
         </a>
       </div>
   
@@ -72,12 +72,10 @@ export function HeroSectionFourth() {
         <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
           <video src={heroSectionVideo} preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
         </div>
-      </div>
-  
-      {/* Features Section */}
+        {/* Features Section */}
       <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Replaces</h4>
+          <h4 className="text-md font-semibold">Replaces</h4>
           <ul className="flex items-center gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">
@@ -92,6 +90,9 @@ export function HeroSectionFourth() {
           </ul>
         </div>
       </div>
+      </div>
+  
+      
     </div>
   </div>
   

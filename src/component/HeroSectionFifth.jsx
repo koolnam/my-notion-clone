@@ -1,6 +1,6 @@
 "use client"
 import heroSectionVideo from "@/assets/ai-screen-desktop.mp4" 
-import { useEffect, useState } from "react"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSectionFifth() {
   const arrayofhero = [
@@ -21,52 +21,18 @@ export function HeroSectionFifth() {
     },
   ]
 
-  // New array for the bottom section items
-  const featuresArray = [
-    {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature one",
-    },
-    {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature two",
-    },
-    {
-      imgSrc: "/placeholder.svg?height=20&width=20",
-      text: "Feature three",
-    },
-  ]
-
-  // State to track if screen width is <= 836px
-  const [isMobile, setIsMobile] = useState(false)
-
-  // Effect to check screen width and update state
-  useEffect(() => {
-    const checkScreenWidth = () => {
-      setIsMobile(window.innerWidth <= 836)
-    }
-
-    // Initial check
-    checkScreenWidth()
-
-    // Add event listener for resize
-    window.addEventListener("resize", checkScreenWidth)
-
-    // Cleanup
-    return () => window.removeEventListener("resize", checkScreenWidth)
-  }, [])
 
   return (
     <div className="w-full max-w-[1252px] mx-auto px-4 md:px-6">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Left Content */}
       <div className="space-y-6 order-1">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Get a brain boost.</h1>
+        <h1 className="text-4xl md:text-6xl font-bold md:leading-[64px] tracking-[-1.875px]">Get a brain boost.</h1>
         <p className="text-lg text-muted-foreground">
           Built right into your workspace, Notion AI is ready to brainstorm, summarize, help you write, and find what you’re looking for.
         </p>
-        <a href="" className="inline-flex items-center text-primary font-medium hover:underline">
-          Try Notion AI→
+        <a href="" className="inline-flex items-center text-blue-500 font-medium hover:underline decoration-black">
+          Try Notion AI <span>{<ArrowRight size={19}/>}</span>
         </a>
       </div>
   
@@ -92,24 +58,7 @@ export function HeroSectionFifth() {
         </div>
       </div>
   
-      {/* Features Section */}
-      <div className="md:col-span-2 order-4">
-        <div className="flex flex-wrap items-center gap-1 mb-8">
-          <h4 className="text-lg font-semibold">Key Features:</h4>
-          <ul className="flex items-center gap-4 p-0 m-0 list-none">
-            {featuresArray.map((feature, index) => (
-              <li key={index} className="flex items-center gap-1">
-                <img
-                  src={feature.imgSrc || "/placeholder.svg"}
-                  alt={`Feature ${index + 1}`}
-                  className="w-5 h-5 object-contain"
-                />
-                <span>{feature.text}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+   
     </div>
   </div>
   
