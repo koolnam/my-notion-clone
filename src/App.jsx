@@ -10,6 +10,7 @@ import { HeroSectionFifth } from "./component/HeroSectionFifth";
 import GetStarted from "./component/GetStarted"
 import Footer from "./component/Footer";
 import ResourceGrid from "./component/GridTemplate";
+import { BlockQuote } from "./component/BlockQuote";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       
          <HeroSectionThird />
         <HeroSectionFourth />
+       <BlockQuote/>
         <HeroSectionFifth />
        <ResourceGrid/>
         <EveryThingYouNeed/>
