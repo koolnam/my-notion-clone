@@ -1,19 +1,22 @@
-import Pin from "@/assets/pin.png"
+import pin from "../assets/pin.png"
 export function BlockQuote() {
     return(
-        <section className="flex justify-center items-center p-6 max-w-[1252px m-auto">
-      <div className="relative max-w-md w-full transform rotate-[-2deg]">
-        <div
-          className="relative bg-[#f8f7f4] p-16 pt-12 shadow-md before:content-[''] before:absolute before:w-8 before:h-8 
-          before:bottom-6
-          before:bg-[url('@/assets/pin.png')] before:bg-contain before:bg-no-repeat before:top-2 before:left-1/2 before:-translate-x-1/2"
-        >
-          <blockquote className="text-center ">
-            <p className="text-[42px] font-serif mb-4">"Your AI everything app."</p>
-            <footer className="text-center font-medium">Forbes</footer>
+      <section className="flex justify-center items-center max-w-[1252px] m-auto py-16">
+      <div className="relative max-w-none w-auto transform rotate-[-3deg]">
+        <div className="absolute w-[64px] h-full top-[-50px] left-1/2 -translate-x-1/2 z-10">
+          <img src={pin} alt="" className=" object-contain" />
+        </div>
+        <div className="relative bg-[#f8f7f4] px-20 py-16 pt-14 shadow-md">
+          <blockquote className="text-center">
+            <p className="text-2xl md:text-3xl lg:text-[42px] font-serif mb-4 whitespace-nowrap">
+              "Your AI everything app."
+            </p>
+            <div className="flex justify-center "> 
+           <img width={60} src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fshared%2Flogos%2Fblack%2Fforbes.png&w=96&q=75" alt="" />
+           </div>
           </blockquote>
         </div>
       </div>
-        </section>
+    </section>
     )
 }
