@@ -41,8 +41,8 @@ export function HeroSectionFifth() {
         <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {arrayofhero.map((item, index) => (
             <li key={index} className="p-4 bg-background">
-              <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4">
-                <video src={item.vidSource} className="w-full h-[80px] object-cover" autoPlay muted playsInline />
+                       <div className="w-full max-w-[80px] bg-muted rounded-md mb-4">
+                <video src={item.vidSource} className="size-full object-cover max-h-[80px]" autoPlay muted playsInline />
               </div>
               <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
               <p className="text-sm text-muted-foreground">{item.subtitle}</p>

@@ -2,7 +2,7 @@ import pin from "../assets/pin.png"
 export function BlockQuote() {
     return(
       <section className="flex justify-center items-center w-full max-w-[1252px] m-auto py-16">
-      <div className="relative max-w-none w-auto transform rotate-[-3deg]">
+      <div className="relative max-w-none w-[80%] sm:w-[60%] md:w-auto transform rotate-[-3deg]">
         <div className="absolute w-[64px] h-full top-[-40px] lg:top-[-50px] left-1/2 -translate-x-1/2 z-10">
           <img src={pin} alt="" className="w-[40px] lg:w-[80px] object-contain" />
         </div>

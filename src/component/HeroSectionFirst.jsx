@@ -46,6 +46,7 @@ export function HeroSectionFirst() {
           src={homePageVid}
           className="h-auto w-full max-w-[340px] md:max-w-[400px] lg:max-w-[450px]  xl:max-w-[600px]"
           autoPlay
+          playsInline
           muted
         />
       </div>

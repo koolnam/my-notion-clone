@@ -1,6 +1,4 @@
-"use client"
-import heroSectionVideo from "@/assets/organize-screen-desktop.mp4" 
-import { ArrowRight } from "lucide-react"
+ import { ArrowRight } from "lucide-react"
 
 export function HeroSectionFourth() {
   const arrayofhero = [
@@ -57,8 +55,8 @@ export function HeroSectionFourth() {
         <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {arrayofhero.map((item, index) => (
             <li key={index} className="p-4 bg-background">
-              <div className="w-full max-w-[80px] aspect-video bg-muted rounded-md mb-4">
-                <video src={item.vidSource} className="w-full h-[80px] object-cover" autoPlay muted playsInline />
+                      <div className="w-full max-w-[80px] bg-muted rounded-md mb-4">
+                <video src={item.vidSource} className="size-full object-cover max-h-[80px]" autoPlay muted playsInline />
               </div>
               <h4 className="text-lg font-semibold mb-1">{item.title}</h4>
               <p className="text-sm text-muted-foreground">{item.subtitle}</p>
@@ -70,7 +68,7 @@ export function HeroSectionFourth() {
       {/* Video Section */}
       <div className="md:col-span-2 order-2 md:order-3">
         <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
-          <video src={heroSectionVideo} preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
+          <video src="https://www.notion.com/front-static/pages/product/super-duper/organize/organize-screen-desktop.mp4" preload="auto" autoPlay muted playsInline className="w-full h-full object-cover rounded-md" />
         </div>
         {/* Features Section */}
       <div className="md:col-span-2 order-4">
