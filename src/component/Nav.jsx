@@ -133,7 +133,7 @@ export default function Nav() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden space-y-2 text-left relative overflow-auto h-[calc(100vh-56px)] flex flex-col justify-between">
+        <div className="lg:hidden space-y-2 text-left relative overflow-auto h-[calc(100dvh-56px)] flex flex-col justify-between">
           
           <div>{navBarListItems.map((item, index) => (
             <div key={index}>
