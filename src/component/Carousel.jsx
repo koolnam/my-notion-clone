@@ -234,7 +234,7 @@ export default function ImageCarouselWithThumbnails() {
 
       <div className="mt-4 flex justify-center">
         <div className="overflow-x-auto pb-2 max-w-full">
-          <div className="flex gap-2 flex-wrap ">
+          <div className="flex gap-2 flex-wrap justify-center">
             {images.map((image, index) => (
               <button
                 key={image.id}

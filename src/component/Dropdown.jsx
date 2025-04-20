@@ -5,7 +5,7 @@ const Dropdown = ({ items }) => {
   return (
     <div className="relative">
       <div
-        className={`absolute left-0 -top-1 z-[1000] mt-1  p-[6px_4px]  shadow-md rounded-[var(--border-radius-300)] opacity-0 pointer-events-none group-hover:pointer-events-auto transform scale-95 transition-transform duration-150 ease-in-out ${
+        className={`absolute left-0 -top-1 z-[1000] mt-1  p-[6px_4px]  shadow-md rounded-lg opacity-0 pointer-events-none group-hover:pointer-events-auto transform scale-95 transition-transform duration-150 ease-in-out ${
           items?.length > 0
             ? "group-hover:opacity-100 group-hover:scale-100"
             : ""
