@@ -1,8 +1,8 @@
 "use client"
-import heroSectionVideo from "@/assets/write-screen-desktop.mp4"
+
 import { ArrowRight } from "lucide-react"
 
-export function SecondHeroSection() {
+export function BuildPerfect() {
   const arrayofhero = [
     {
       title: "Building blocks",
@@ -68,7 +68,7 @@ export function SecondHeroSection() {
       {/* Video Section */}
       <div className="md:col-span-2 order-2 md:order-3">
         <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
-          <video src={heroSectionVideo} preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
+          <video src='https://www.notion.com/front-static/pages/product/super-duper/write/write-screen-desktop.mp4' preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
         </div>
  {/* Features Section */}
  <div className="md:col-span-2 order-4">

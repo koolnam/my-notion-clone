@@ -1,8 +1,7 @@
 "use client"
 import { ArrowRight } from "lucide-react"
-import heroSectionVideo from "@/assets/plan-screen-desktop.mp4"
 
-export function HeroSectionThird() {
+export function YourWorkflow() {
   const arrayofhero = [
     {
       title: "Tasks and to-dos",
@@ -68,7 +67,7 @@ export function HeroSectionThird() {
       {/* Video Section */}
       <div className="md:col-span-2 order-2 md:order-3">
         <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
-          <video src={heroSectionVideo} preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
+          <video src='https://www.notion.com/front-static/pages/product/super-duper/plan/plan-screen-desktop.mp4' preload="none" autoPlay muted playsInline className="w-full h-full object-cover" />
         </div>
  {/* Features Section */}
  <div className="md:col-span-2 order-4">

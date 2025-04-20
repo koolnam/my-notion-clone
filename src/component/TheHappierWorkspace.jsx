@@ -1,10 +1,7 @@
-import toyotaImage from "../assets/svg/toyota-color.svg";
-import figmaImage from "../assets/svg/figma-color.svg";
-import rampImage from "../assets/svg/ramp-image.svg";
-import homePageVid from "../assets/homepage.mp4";
+
 import Button from "./Buttons";
 
-export function HeroSectionFirst() {
+export function TheHappierWorkspace() {
   return (
     <div className="flex justify-between max-w-[1252px] mx-auto flex-col mdd:flex-row mdd:items-end py-10 px-8 gap-6">
       <div className="flex flex-col gap-4 sm:items-center mdd:items-start">
@@ -29,21 +26,21 @@ export function HeroSectionFirst() {
   </p>
 
   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6  place-items-start mt-2">
-    <img src={toyotaImage} className="w-[90px]" alt="Toyota" />
+    <img src='https://www.notion.com/front-static/logos/generic/en/toyota-color.svg' className="w-[90px]" alt="Toyota" />
     <img
       src="https://www.notion.com/front-static/logos/generic/en/openai-v2.svg"
       className="w-[90px]"
       alt="Vercel"
     />
-    <img src={figmaImage} className="w-[90px]" alt="Figma" />
-    <img src={rampImage} className="w-[90px]" alt="Ramp" />
+    <img src='https://www.notion.com/front-static/logos/generic/en/figma-color.svg' className="w-[90px]" alt="Figma" />
+    <img src='https://www.notion.com/front-static/logos/generic/en/ramp.svg' className="w-[90px]" alt="Ramp" />
   </div>
 </div>
 
       </div>
       <div className="flex justify-center">
         <video
-          src={homePageVid}
+          src='https://www.notion.com/front-static/pages/product/super-duper/hero/homepage-hero.mp4'
           className="h-auto w-full max-w-[340px] md:max-w-[400px] lg:max-w-[450px]  xl:max-w-[600px]"
           autoPlay
           playsInline

@@ -1,6 +1,6 @@
-import { Book, Bike, Target, FileText, Plane, Calendar, CheckCircle, ArrowRight } from "lucide-react"
+import { Target, ArrowRight } from "lucide-react"
 
-export default function ResourceGrid() {
+export default function StartWithaTemplate() {
   return (
     <div className="container max-w-[1252px] mx-auto p-4">
   <div className="space-y-6 order-1">

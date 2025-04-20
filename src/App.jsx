@@ -1,30 +1,30 @@
 import "./index.css";
 import Nav from "./component/Nav";
-import { HeroSectionFirst } from "./component/HeroSectionFirst";
+import { TheHappierWorkspace } from "./component/TheHappierWorkspace";
 import ImageCarouselWithThumbnails from "./component/Carousel";
-import { SecondHeroSection } from "./component/HeroSectionSec";
-import EveryThingYouNeed from "./component/EveryThingYouNeed";
-import { HeroSectionThird } from "./component/HeroSectionThird";
-import { HeroSectionFourth } from "./component/HeroSectionFourth";
-import { HeroSectionFifth } from "./component/HeroSectionFifth";
-import GetStarted from "./component/GetStarted"
-import Footer from "./component/Footer";
-import ResourceGrid from "./component/GridTemplate";
+import { BuildPerfect } from "./component/BuildPerfect";
+import { YourWorkflow } from "./component/YourWorkflow.";
+import { FindEverything } from "./component/FindEverything.";
 import { BlockQuote } from "./component/BlockQuote";
+import { GetaBrainBoost } from "./component/GetaBrainBoost";
+import EveryThingYouNeed from "./component/EveryThingYouNeed";
+import GetStarted from "./component/GetStarted"
+import StartWithaTemplate from "./component/GridTemplate";
+import Footer from "./component/Footer";
 
 function App() {
   return (
     <>
       <Nav />
       <div className="flex flex-col gap-10 lg:gap-[150px]">
-      <HeroSectionFirst />
+      <TheHappierWorkspace />
         <ImageCarouselWithThumbnails />
-        <SecondHeroSection />  
-         <HeroSectionThird />
-        <HeroSectionFourth />
+        <BuildPerfect />  
+         <YourWorkflow />
+        <FindEverything />
        <BlockQuote/>
-        <HeroSectionFifth />
-       <ResourceGrid/>
+        <GetaBrainBoost />
+       <StartWithaTemplate/>
         <EveryThingYouNeed/>
          <GetStarted/>
       </div>

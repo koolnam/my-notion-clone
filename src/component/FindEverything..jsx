@@ -1,6 +1,6 @@
  import { ArrowRight } from "lucide-react"
 
-export function HeroSectionFourth() {
+export function FindEverything() {
   const arrayofhero = [
     {
       title: "Teamspaces",
