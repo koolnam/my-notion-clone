@@ -16,11 +16,10 @@ function App() {
   return (
     <>
       <Nav />
-      <div className="flex flex-col px-14 gap-[150px]">
+      <div className="flex flex-col gap-10 lg:gap-[150px]">
       <HeroSectionFirst />
         <ImageCarouselWithThumbnails />
         <SecondHeroSection />  
-      
          <HeroSectionThird />
         <HeroSectionFourth />
        <BlockQuote/>

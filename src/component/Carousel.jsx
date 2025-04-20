@@ -212,7 +212,7 @@ export default function ImageCarouselWithThumbnails() {
   }, [currentImageIndex]);
 
   return (
-    <div className="flex flex-col max-w-[1198px] mx-auto px-5 w-full">
+    <div className="flex flex-col max-w-[1198px] mx-auto px-5 w-full -mt-14 md:mt-0">
       <div className="relative h-auto w-full overflow-hidden bg-white shadow-md rounded-lg">
         <AnimatePresence initial={false} mode="popLayout">
           <motion.div

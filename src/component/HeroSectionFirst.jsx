@@ -44,7 +44,7 @@ export function HeroSectionFirst() {
       <div className="flex justify-center">
         <video
           src={homePageVid}
-          className="h-auto max-w-[340px] md:max-w-[400px] lg:max-w-[450px]  xl:max-w-[600px]"
+          className="h-auto w-full max-w-[340px] md:max-w-[400px] lg:max-w-[450px]  xl:max-w-[600px]"
           autoPlay
           muted
         />

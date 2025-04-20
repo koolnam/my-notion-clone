@@ -50,7 +50,7 @@ const layoutItems = [
 const EveryThingYouNeed = () => {
   return (
     <div className="max-w-[1252px] mx-auto py-[40px] px-[30px]">
-      <h2 className="text-[60px] font-bold leading-[64px] tracking-[-1.875px] text-[#191918] max-w-[550px] mb-[48px]">
+      <h2 className="text-4xl lg:text-[60px] font-bold lg:leading-[64px] tracking-[-1.875px] text-[#191918] max-w-[550px] mb-[48px]">
         Everything you need to do your best work.
       </h2>
 
