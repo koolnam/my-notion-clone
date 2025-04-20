@@ -4,7 +4,7 @@ import Button from "./Buttons";
 const ProductCard = ({ title, tryHref, downloadHref, imageSrc, imageAlt }) => {
   return (
     <div className="bg-[#f6f5f4] rounded-xl p-6 flex flex-col">
-      <h1 className="text-[42px] font-semibold mb-4">{title}</h1>
+      <h1 className="text-4xl lg:text-[42px] font-semibold mb-4">{title}</h1>
       <div className="flex gap-3 mb-6">
         <Button className="bg-blue-500 rounded-lg hover:[#045AC4] text-white">
           <a href={tryHref}>Try it free</a>
@@ -23,7 +23,7 @@ const ProductCard = ({ title, tryHref, downloadHref, imageSrc, imageAlt }) => {
 export default function GetStarted() {
   return (
     <section className="max-w-[1252px] mx-auto py-[40px] px-[25px]">
-      <h2 className="text-[60px] font-bold text-left mb-12">Get started.</h2>
+      <h2 className="text-4xl lg:text-[60px] font-bold text-left mb-12">Get started.</h2>
       <div className="grid md:grid-cols-2 gap-3">
         <ProductCard
           title="Notion"

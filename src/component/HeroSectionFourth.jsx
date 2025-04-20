@@ -76,7 +76,7 @@ export function HeroSectionFourth() {
       <div className="md:col-span-2 order-4">
         <div className="flex flex-wrap items-center gap-1 mb-8">
           <h4 className="text-md font-semibold">Replaces</h4>
-          <ul className="flex items-center gap-4 p-0 m-0 list-none">
+          <ul className="flex items-center flex-wrap gap-4 p-0 m-0 list-none">
             {featuresArray.map((feature, index) => (
               <li key={index} className="flex items-center gap-1">
                 <img
