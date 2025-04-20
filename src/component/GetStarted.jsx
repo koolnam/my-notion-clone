@@ -13,7 +13,7 @@ const ProductCard = ({ title, tryHref, downloadHref, imageSrc, imageAlt }) => {
           <a href={downloadHref}>Download now</a>
         </Button>
       </div>
-      <div className="relative h-64 w-full mt-auto">
+      <div className="relative h-auto w-full mt-auto">
         <img src={imageSrc || "/placeholder.svg"} alt={imageAlt} className="object-contain" />
       </div>
     </div>
