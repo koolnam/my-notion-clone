@@ -74,7 +74,7 @@ const EveryThingYouNeed = () => {
         className="size-16 object-contain"
       />
       )}
-              <h2 className="text-2xl font-medium flex">{item.title} <span>{<ArrowRight/>}</span> </h2>
+              <h2 className="text-2xl font-medium flex items-center gap-2">{item.title} <span>{<ArrowRight/>}</span> </h2>
               <p className="text-gray-500">{item.description}</p>
             </div>
           </div>
