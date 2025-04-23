@@ -51,8 +51,8 @@ export function GetaBrainBoost() {
   
       {/* Video Section */}
       <div className="md:col-span-2 order-2 md:order-3">
-        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
-          <video src='https://www.notion.com/front-static/pages/product/super-duper/ai/ai-screen-desktop.mp4' autoPlay muted playsInline loop className="w-full h-full object-cover" />
+        <div className="aspect-video bg-muted rounded-2xl flex items-center justify-center mb-8">
+          <video src='https://www.notion.com/front-static/pages/product/super-duper/ai/ai-screen-desktop.mp4' autoPlay muted playsInline loop className="w-full h-full rounded-[inherit] object-cover" />
         </div>
       </div>
   

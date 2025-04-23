@@ -35,7 +35,7 @@ export function BuildPerfect() {
   ]
 
   return (
-    <div className="w-full max-w-[1252px] mx-auto px-4 md:px-6">
+    <div className="w-full max-w-[1252px] mx-auto px-4 md:px-13">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
       {/* Left Content */}
       <div className="space-y-6 order-1">
@@ -65,8 +65,8 @@ export function BuildPerfect() {
 
       {/* Video Section */}
       <div className="md:col-span-2 order-2 md:order-3">
-        <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-8">
-          <video src='https://www.notion.com/front-static/pages/product/super-duper/write/write-screen-desktop.mp4'  loop autoPlay playsInline muted className="w-full h-full object-cover" />
+        <div className="aspect-video bg-muted rounded-2xl  flex items-center justify-center mb-8">
+          <video src='https://www.notion.com/front-static/pages/product/super-duper/write/write-screen-desktop.mp4'  loop autoPlay playsInline muted className="w-full rounded-[inherit] h-full object-cover" />
         </div>
  {/* Features Section */}
  <div className="md:col-span-2 order-4">

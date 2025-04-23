@@ -62,7 +62,7 @@ export default function Footer() {
             <div>
               <Button
                 variant="outline"
-                className="flex items-center gap-2 border text-black border-gray-300 rounded-md px-4 py-2 text-sm"
+                className="flex items-center gap-2 border text-black border-gray-300 hover:bg-slate-300 rounded-md px-4 py-2 text-sm"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4">
                   <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm5.2 4.8h-2.4c-.2-1-.6-1.9-1.1-2.7 1.4.5 2.6 1.5 3.5 2.7zM8 2c.6 0 1.3 1.1 1.7 2.8H6.3C6.7 3.1 7.4 2 8 2zm-6.2 8c-.1-.5-.2-1-.2-1.5s.1-1 .2-1.5h2.8c-.1.5-.1 1-.1 1.5s0 1 .1 1.5H1.8zm.8 1.6h2.4c.2 1 .6 1.9 1.1 2.7-1.4-.5-2.6-1.5-3.5-2.7zm2.4-6.4H2.6c.9-1.2 2.1-2.2 3.5-2.7-.5.8-.9 1.7-1.1 2.7zM8 14c-.6 0-1.3-1.1-1.7-2.8h3.4c-.4 1.7-1.1 2.8-1.7 2.8zm2.1-4.4H5.9c-.1-.5-.1-1-.1-1.5s0-1 .1-1.5h4.2c.1.5.1 1 .1 1.5s0 1-.1 1.5zm.4 4.3c.5-.8.9-1.7 1.1-2.7h2.4c-.9 1.2-2.1 2.2-3.5 2.7zm1.5-4.3c.1-.5.1-1 .1-1.5s0-1-.1-1.5h2.8c.1.5.2 1 .2 1.5s-.1 1-.2 1.5h-2.8z" />
@@ -189,8 +189,9 @@ export default function Footer() {
             </div>
 
             {/* Notion For Links */}
-            <div>
+            <div >
               <h3 className="font-semibold text-lg mb-4">Notion for</h3>
+              <div className="flex justify-between flex-col gap-11">
               <ul className="space-y-3">
                 <li>
                   <a href="/enterprise" className="text-sm hover:text-gray-600">
@@ -218,6 +219,7 @@ export default function Footer() {
                     <path d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z" />
                   </svg>
                 </a>
+              </div>
               </div>
             </div>
           </div>
